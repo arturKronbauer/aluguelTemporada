@@ -15,6 +15,7 @@ k)	Inversão de controle: padrão de desenvolvimento que consiste em retirar da 
 l)	Injeção de dependência: é uma forma de realizar a inversão de controle: um componente externo instancia a dependência, que é então injetada no objeto "pai".
 
 Questão
+
 Uma imobiliária possui vários imóveis para alugar por temporada em diferentes condomínios. Para cada imóvel é atribuído um valor por dia e uma taxa de serviço, também calculada diariamente. O valor a ser pago pelo inquilino é o valor da diária, mais a taxa de serviço (que varia de um condomínio para outro), multiplicado pelo número de dias.
 Desenvolva um programa para ler os dados da locação: código imóvel, descrição do imóvel, valor da diária, data de entrada e data de saída. Após o programa deve gerar o boleto de pagamento contendo: os dados do imóvel, os dados da locação, o valor total da taxa de serviço e o valor total do pagamento. Siga o exemplo de interação descrito na prova 
 Cada condomínio tem uma forma diferente de calcular o valor da taxa de serviço. Vamos utilizar os seguintes cálculos que devem ser implementados no programa:
@@ -25,18 +26,30 @@ taxa = (5% do valor da diária do aluguel + R$ 10,00 de encargos)
 
 Cálculos para processar o boleto
 taxa total = taxa  * número de diárias
+
 valor total = (valor da diária * número de diárias) + taxa total 
 
+
 Exemplo de interação
+
 *** Informe os dados da locação: ***
+
 Código do imóvel: 1001
+
 Descrição: Casa 4/4
+
 Valor da Diária: 1000,00
+
 Data Entrada (dd/MM/yyyy): 12/05/2023
+
 Data Saída (dd/MM/yyyy): 15/05/2023
 
+
 *** Boleto Condomínio Mar Azul ***
+
 Imóvel [Código=1001, Descrição=Casa 4/4]
+
 Aluguel [Entrada=12/05/2023, Saida=15/05/2023]
+
 Boleto [Taxa Total=105.0, Valor Total=3105.0]
 
